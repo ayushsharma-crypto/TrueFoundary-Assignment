@@ -17,3 +17,7 @@
 # Execution flow
 
 You click on  `Create a Github repository` -> It takes you to the authorization page -> Repository with sample files are created.
+
+# Video
+
+[video.webm](https://user-images.githubusercontent.com/55908221/223843055-f4a98385-5274-4c48-b93f-c8ad367950f5.webm)
