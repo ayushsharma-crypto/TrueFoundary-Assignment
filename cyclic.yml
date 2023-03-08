@@ -1,0 +1,24 @@
+name: github_integrate
+version: 1.0.0
+
+environments:
+  production:
+    image: node:latest
+    build:
+      commands:
+        - npm install
+        - npm run build
+    deploy:
+      commands:
+        - npm run start:prod
+
+workflows:
+  main:
+    jobs:
+      - name: build-and-deploy
+        environment: production
+        steps:
+          - checkout
+          - run: npm install
+          - run: npm run build
+          - run: npm run start:prod
